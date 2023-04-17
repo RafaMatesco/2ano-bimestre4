@@ -1,0 +1,72 @@
+def gerarHTML(reg=0):
+    try:
+        diretorio = 'R:/UNIVAP/2 ano/4 bimestre/'
+        extensao = '.html'
+        reg = str(reg)
+        arquivo = open(diretorio+reg+extensao, 'w')
+    except Exception as erro:
+        print(f'Ocorreu um erro: {erro}')
+    else:
+        try:
+            reg = int(reg)
+            comandosql = conexao.cursor(buffered=True)
+            comandosql.execute(f'select * from disciplinasxprofessores where codprofessor = {reg} order by curso;')
+            tabela = comandosql.fetchall()
+            comandosql.close()
+            body = ''
+            conteudo = ''
+            cursoAnterior = 0
+            if comandosql.rowcount > 0:
+                for registro in tabela:
+                    discHTML = ''
+
+                    comandosql = conexao.cursor(buffered=True)
+                    comandosql.execute(f'select nomeprof from professores where registro = {registro[2]};')
+                    nomeProfessores = comandosql.fetchone()
+                    for v in nomeProfessores:
+                        nomeProf = v
+                    comandosql.close()
+
+                    comandosql = conexao.cursor(buffered=True)
+                    comandosql.execute(f'select curso from disciplinasxprofessores where curso = {registro[3]};')
+                    cursos = comandosql.fetchone()
+                    for v in cursos:
+                        curso = v
+                    comandosql.close()
+
+                    comandosql = conexao.cursor(buffered=True)
+                    comandosql.execute(f'select codigodisc, nomedisc from disciplinas where codigodisc = {registro[1]};')
+                    disciplina = comandosql.fetchall()
+                    comandosql.close()
+
+                    for v in disciplina:
+                        discHTML += f'''
+                                    {v[0]} | {v[1]} <br>
+                                    '''
+                    if cursoAnterior != curso:
+                        body += f'''
+                                 <br><br>
+                                Curso: {curso} <br>
+                                CÓDIGO DA DISCIPLINA | NOME DISCIPLINA <br>
+                                 '''
+                    body += f'''
+                            {discHTML}
+                            '''
+                    cursoAnterior = curso
+                conteudo += f'''<html>
+                                    <head>
+                                        <title>Professor {nomeProf}</title>
+                                    </head>
+                                    <body>
+                                        Disciplinas do professor: {nomeProf} <br>
+                                        {body}
+                                    </body>
+                            </html>
+                             '''
+                arquivo.write(conteudo)
+
+            else:
+                print('Não existem cadastros!!!')
+        except Exception as erro:
+            print(f'Ocorreu erro: {erro}')
+    arquivo.close()

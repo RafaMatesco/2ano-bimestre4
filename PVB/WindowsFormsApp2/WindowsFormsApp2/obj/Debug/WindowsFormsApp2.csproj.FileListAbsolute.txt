@@ -1,0 +1,43 @@
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\aluno\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\BouncyCastle.Crypto.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\Google.Protobuf.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\K4os.Hash.xxHash.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\MySql.Data.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Buffers.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Memory.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\ZstdNet.dll
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\BouncyCastle.Crypto.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\Google.Protobuf.pdb
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\Google.Protobuf.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\K4os.Hash.xxHash.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\MySql.Data.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Buffers.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Memory.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Numerics.Vectors.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+R:\UNIVAP\2 ano\4 bimestre\PVB\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

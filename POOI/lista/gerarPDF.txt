@@ -1,0 +1,119 @@
+def gerarPDF(escolha1=0,escolha2=0):
+    try:
+        nomeArquivo = input('Digite o nome do arquivo PDF:')
+        pdf = canvas.Canvas(f'{nomeArquivo}.pdf')
+        regua(pdf)
+        pdf.setFillColor('black')
+        pdf.setTitle(nomeArquivo)
+
+        #professor
+        if escolha1 == 1:
+            #nome
+            if escolha2 == 1:
+                try:
+                    nome = input('Digite o nome do professor: ')
+                    print('\n')
+                    comandosql = conexao.cursor()
+                    comandosql.execute(f"select * from professores where nomeprof like '{nome}%';")
+                    tabela = comandosql.fetchall()
+                    if comandosql.rowcount > 0:
+                        nomeProf = list()
+                        telProf = list()
+                        idadeProf = list()
+                        salarioProf = list()
+                        for indice, registro in enumerate(tabela):
+                            nomeProf.append(registro[1])
+                            telProf.append(registro[2])
+                            idadeProf.append(registro[3])
+                            salarioProf.append(registro[4])
+                except Exception as error:
+                    print(f'Ocorreu erro: {error}')
+
+                try:
+                    x = 780
+                    for y in range(0,len(nomeProf)):
+                        pdf.setFont('Helvetica-Oblique', 24)
+                        pdf.drawString(107, x, f'Dados do professor {nomeProf[y]}')
+                        pdf.setFont('Helvetica-Oblique', 12)
+                        x -= 20
+                        pdf.drawString(137, x, f'telefone -> {telProf[y]}')
+                        x -= 20
+                        pdf.drawString(137, x, f'idade -> {idadeProf[y]}')
+                        x -= 20
+                        pdf.drawString(137, x, f'salário -> {salarioProf[y]}')
+                        x -= 30
+                    pdf.save()
+                    print(f'{nomeArquivo} foi gerado com sucesso!')
+                except:
+                    x = 780
+                    for y in range(0, qnt, 1):
+                        pdf.setFont('Helvetica-Oblique', 24)
+                        pdf.drawString(107, x, f'Dados do professor {nomeProf[y]}')
+                        pdf.setFont('Helvetica-Oblique', 12)
+                        x -= 20
+                        pdf.drawString(137, x, f'telefone -> {telProf[y]}')
+                        x -= 20
+                        pdf.drawString(137, x, f'idade -> {idadeProf[y]}')
+                        x -= 20
+                        pdf.drawString(137, x, f'salário -> {salarioProf[y]}')
+                        x -= 20
+                    pdf.save()
+                    print(f'{nomeArquivo} foi gerado com sucesso!')
+            #registro
+            elif escolha2 == 2:
+                try:
+                    reg = int(input('Digite o registro do professor: '))
+                    print('\n')
+                    comandosql = conexao.cursor()
+                    comandosql.execute(f'select * from professores where registro = {reg};')
+                    tabela = comandosql.fetchall()
+                    if comandosql.rowcount > 0:
+                        for registro in tabela:
+                            nomeProf = registro[1]
+                            telProf = registro[2]
+                            idadeProf = registro[3]
+                            salarioProf = registro[4]
+                except Exception as error:
+                    print(f'Ocorreu erro: {error}')
+
+                try:
+                    x = 780
+                    pdf.setFont('Helvetica-Oblique', 24)
+                    pdf.drawString(107, x, f'Dados do professor {nomeProf}')
+                    pdf.setFont('Helvetica-Oblique', 12)
+                    x -= 20
+                    pdf.drawString(137, x, f'telefone -> {telProf}')
+                    x -= 20
+                    pdf.drawString(137, x, f'idade -> {idadeProf}')
+                    x -= 20
+                    pdf.drawString(137, x, f'salário -> {salarioProf}')
+
+                    pdf.save()
+                    print(f'{nomeArquivo} foi gerado com sucesso!')
+                except:
+                    x = 780
+                    pdf.setFont('Helvetica-Oblique', 36)
+                    pdf.drawString(107, x, f'Dados do professor {nomeProf}')
+                    pdf.setFont('Helvetica-Oblique', 16)
+                    x -= 20
+                    pdf.drawString(67, x, f'telefone -> {telProf}')
+                    x -= 20
+                    pdf.drawString(67, x, f'idade -> {idadeProf}')
+                    x -= 20
+                    pdf.drawString(67, x, f'salário -> {salarioProf}')
+
+                    pdf.save()
+                    print(f'{nomeArquivo} foi gerado com sucesso!')
+        #curso
+        elif escolha1 == 2:
+            #disciplina
+            if escolha2 == 1:
+                print('')
+            #professor
+            elif escolha2 == 2:
+                print('')
+            #carga horaria
+            elif escolha2 == 3:
+                print('')
+    except Exception as error:
+        print(f'{error}')
